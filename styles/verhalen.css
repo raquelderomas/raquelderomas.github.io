@@ -1,0 +1,472 @@
+body {
+    margin:0;
+    font-family: "Nexa light", sans-serif;
+    background: #F4E6D8;
+    color: #606060;
+    font-size: 1rem;
+}
+
+main, div{
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+header{
+    background-image: url('images/achtergrond.jpg');
+    background-size: cover;
+    padding-top: 1em;
+    height: calc(20vh);
+    margin-bottom: 3em;
+}
+
+/***************************************
+HEADINGS
+****************************************/
+
+h1 {
+    text-align: center;
+    color: #F4E6D8;
+    text-shadow: 2px 2px 10px black;
+    font-family: "nexa bold";
+    font-size: 3em;
+}
+
+h2 {
+    font-family: "nexa bold";
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    width: 100%;
+    padding-bottom:  0;
+}
+
+div h2{
+    text-align: left;
+}
+
+main h2{
+    
+    color: #2800a0;
+}
+
+h3{
+    font-family: "nexa light";
+    color: #2800a0;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+h4{
+    text-align: center;
+    color: white;
+    background-color:#2800a0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+/**************************************
+NAVIGATIE HEADER
+***************************************/
+nav {
+    background: white;
+    border-radius: .5em;
+    margin: 0 5em 0;
+    padding: 1px;
+}
+
+nav img{
+        width: 2em;
+    }
+
+nav a{
+    color: #00d66c;
+    transition: .3s;
+    text-decoration: none;
+    font-family: "nexa bold";
+}
+
+nav li{
+    list-style-type: none;
+    transition: .5s; 
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a:focus, nav a:hover, .navonderin a:hover {
+    color: #ff3268;
+    outline: none;
+}
+
+/**************************************
+DIV
+***************************************/
+
+div section:nth-of-type(1){/*roze vierkantje*/
+    background: #ff3268;
+    border-radius: .5em;
+    color: white;
+    text-align: center;
+    padding:2em;
+    margin-bottom: 1em;
+    align-items: center;
+} 
+
+div section:nth-of-type(2){/*'jouw opgeslagen verhalen'*/
+    background: white;
+    border-radius: .5em;
+    text-align: left;
+    padding: 1em;
+}
+
+div section:nth-of-type(2) H2{
+    color: #00d66c;
+   margin: 1em;;
+}
+
+section li{
+    background-image: url(images/verhaal1.jpg);
+    background-size:cover;
+    font-family: "nexa bold";
+    font-size: 1em;
+    color: white;
+    border-radius: .5em;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+    margin: 1em;
+    padding: 3em;
+    list-style-type: none; 
+}
+
+section li:hover{
+    box-shadow: 1px 1px 10px grey;
+    color: #ff3268;
+}
+
+section li:nth-of-type(2){
+    background-image: url(images/verhaal2.jpg);
+}
+
+section li:nth-of-type(3){
+    background-image: url(images/verhaal3.jpg);
+}
+
+section ul{
+    padding: 0;
+} 
+
+div a{/*'lees meer'*/
+    color: #2800a0;
+    transition: .3s;
+    font-family: "nexa bold";
+    color: black;
+}
+
+/********************************
+FILTREREN EN SORTEREN
+*********************************/
+
+form{
+    background-color: white;
+    color: #ff3268;
+    border-radius: .5em;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+fieldset{
+    border: 0;
+    display: inline;
+}
+
+legend{
+    margin-bottom: .4em;
+   font-family: "nexa bold";
+    color:#2800a0; 
+    
+}
+
+select{
+    border: 1px solid #2800a0;
+    font-family: "nexa bold";
+    font-size: 1em;
+    
+}
+
+select:focus, select:hover{
+    color: #ff3268;
+    box-shadow: .5px .5px 5px grey;
+    outline: none;
+}
+
+/**************************
+VERHALEN
+***************************/
+
+main{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    
+}
+
+article{
+    padding-bottom: 1em;
+    margin: 1.5em 0 1.5em;
+    background: white;
+    border-radius: .5em;
+    background: white;
+    transition: all .3s ease;
+    position: relative;
+    min-width: 20em;
+}
+
+article:hover{
+    box-shadow: 1px 1px 10px grey;
+}
+
+article footer a{
+    margin-right: 2.5em;
+    margin-left: 0;
+    text-align: center;
+    background-color: #2800a0;
+    color: white;
+    padding: 1em;
+    border-radius: 5em;
+    font-size: 1em;
+    font-family: "nexa bold";
+    transition: all .3s ease;
+    
+}
+
+article a:focus, article a:hover{
+    background-color: #ff3268;   
+}
+
+article p{
+    text-align: left;
+    max-width: 25em;
+    margin: 2.5em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: black;
+}
+
+article footer{
+    font-family: "nexa bold";
+    text-align: center;
+    display: grid;
+    grid-template-columns:auto 3fr;
+    align-items:baseline;
+}
+
+article footer img{
+    width: 1.5em;
+    margin-right: .75em;
+}
+
+/*********************************
+BOOKMARK
+**********************************/
+
+article button{
+    background: none;
+    border: none;
+    display: block;
+    margin-top: .3em;
+    margin-left: 21em;
+}
+
+button > img {
+    width: 3em;
+    margin-top: -.5em;
+    right: 4em;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+button > img:hover{
+    transform: scale(1.1);
+}
+
+
+/***************************************
+FOOTER PAGINA
+****************************************/
+
+.navonderin{
+    padding: 1em;
+    background-color: white;
+    
+}
+
+.navonderin ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   align-items: center;
+}
+
+.navonderin a {
+    color: #00d66c;
+    transition: .3s;
+    text-decoration: none;
+    font-family: "nexa bold";
+    
+}
+
+.navonderin li{
+    list-style-type: none;
+    transition: .5s;
+}
+
+.navonderin img{
+        width: 2em;
+    }
+
+/***************************
+POPULAIR DEZE MAAND
+*****************************/
+
+#populair {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    background-color: #202020;
+    padding-left:5em;
+    padding-right: 5em;
+    margin-top: 5em;
+    padding-bottom: 5em;
+}
+
+#populair h2{
+    margin-top: 2em;
+}
+
+
+/******************************
+OPSLAAN VERHAAL INTERACTIE
+*******************************/
+
+header a:nth-of-type(3){
+    position: relative;
+}
+
+#nummertje_opslaan {
+  font-size: 1em;
+    font-family: "nexa bold";
+  color: #ff3268;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  line-height: 22px;
+  text-align: center;
+  position: absolute;
+    top: 25px;
+  transition: 1s;
+opacity: 0;
+}
+
+#nummertje_opslaan.visible {
+ 
+  opacity: 1;
+
+}
+
+
+/**************************************
+MEDIA QUERIES
+***************************************/  
+@media(min-width:50em){
+    
+    h1{
+        margin-top: 3em;
+    }
+    
+    header{
+        height: calc(40vh);
+    }
+      
+    div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1rem;
+}
+    
+    div section:nth-of-type(1){
+        margin-bottom: 0;
+    }
+
+    
+    nav ul, .navonderin ul{
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    
+}
+    
+    
+    article p{
+    line-height: 1.5em;
+    font-size: 1.1em;
+    
+}
+    .verhalen{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        justify-content: space-between;
+        
+    }
+    
+    article > p{
+        height:12em;
+    }   
+
+}
+
+@media(min-width:70em){
+    
+    div {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 1rem;
+    justify-content: space-between;
+    }
+    
+    div section:nth-of-type(2) ul{
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    margin: 1em;
+    }
+      
+    .verhalen{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
+        
+    }
+}
+
+/*bron voor #nummerje_opslaan: https://codepen.io/FED_HERK04/pen/dyPPaYP*/
+
+/*bron voor de states: https://css-tricks.com/having-a-little-fun-with-custom-focus-styles*/
+
+/*bron voor grid: /*http://grid.malven.co/*/*/
+    
+    

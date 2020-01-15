@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aanmelden</title>
+    <link rel="stylesheet" href="styles/formulier.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1"> </head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="verhalen.html"><img src="styles/images/logo.transavia.png" alt="logo"></a>
+                </li>
+                <li> <a href="aanmelden.html">Aanmelden</a> </li>
+                <li> <a href="">Opgeslagen</a> </li>
+                <li> <a href="">Zoeken</a> </li>
+            </ul>
+        </nav>
+        <h1>Aanmelden</h1> </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Inloggen</legend>
+                <label>E-mailadres
+                    <input type="email" name="emailadres" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <!-- deze pattern zorgt ervoor dat echt een email wordt gezet met '@' en een '.', bron https://www.w3schools.com/tags/att_input_pattern.asp-->
+                </label>
+                <label>Wachtwoord
+                    <input type="password" name="wachtwoord" minlength="8"> </label>
+                <button type="submit">Inloggen</button>
+            </fieldset>
+            <fieldset>
+                <legend>Registreren</legend>
+                <label>Naam
+                    <input type="text" name="voornaam" required> </label>
+                <label>E-mailadres
+                    <input type="email" name="emailadres" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> </label>
+                <label>Nieuw wachtwoord (min. 8 karakters)
+                    <input type="password" name="wachtwoord" required minlength="8"> </label>
+                <button type="submit">Registreren</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer class=navonderin>
+        <ul>
+            <li>
+                <a href="verhalen.html"><img src="styles/images/logo.transavia.png" alt="logo"></a>
+            </li>
+            <li> <a href="aanmelden.html">Aanmelden</a> </li>
+            <li> <a href="">Opgeslagen</a> </li>
+            <li> <a href="">Zoeken</a> </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<!--bron https://www.smashingmagazine.com/2019/01/html5-input-types/#a4-->
