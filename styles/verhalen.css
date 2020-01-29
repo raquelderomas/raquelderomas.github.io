@@ -56,6 +56,8 @@ h3{
     color: #2800a0;
     margin-top: 0;
     margin-bottom: 2em;
+    width: 100%;
+    text-align: center;
 }
 
 h4{
@@ -180,31 +182,86 @@ FILTREREN EN SORTEREN
 *********************************/
 
 form{
-    background-color: white;
-    color: #ff3268;
-    border-radius: .5em;
-    padding: 1em;
-    width: 100%;
-    text-align: center;
+    margin-bottom: 3em;
 }
+label,input{
+        display: block;
+        margin: 0 auto;
+    }
 
 fieldset{
-    border: 0;
-    display: inline;
+    background-color: #2800a0;
+    color: white;
+    border-radius: .5em;
+    padding: 2em;
+    border: none;
 }
 
 legend{
-    margin-bottom: .4em;
-   font-family: "nexa bold";
-    color:#2800a0; 
-    
+    color: white;
+    padding-top: 3em;
+    font-family: "nexa bold";
+    font-size: 2em;
+    text-align: center;
+}
+
+input{
+    border-radius: 0.5em;
+    margin-top: 1em;
+    border: none;
+    background-color: white;
+    font-family: "nexa bold";
+    font-size: 1em;
+    padding: 1em;
+    width: 14em;
+    transition: all .3s ease;
+}
+
+label{
+    margin: 2em;
+    text-align: center;
+}
+
+form button{
+    display: block;
+    width: 14em;
+    background-color: #00d66c;
+    padding: 1em;
+    border-radius: 5em;
+    border: none;
+    font-size: 1em;
+    font-family: "nexa bold";
+    transition: all .3s ease;
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
 
 select{
-    border: 1px solid #2800a0;
-    font-family: "nexa bold";
+    font-family: "nexa light";
     font-size: 1em;
-    
+}
+
+/*************************
+FORM STATES
+***************************/
+
+form button:hover{
+    background-color: white;
+    color:#ff3268;
+}
+
+form button:focus{
+    outline: none;
+    background-color: white;
+    color:#2800a0;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px black;
+
 }
 
 select:focus, select:hover{
@@ -437,7 +494,18 @@ MEDIA QUERIES
     
     article > p{
         height:12em;
-    }   
+    }
+    
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        justify-content:space-around;
+    }
+    
+    legend{
+    text-align: left;
+    }
 
 }
 
